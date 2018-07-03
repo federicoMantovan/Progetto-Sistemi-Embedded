@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radiog">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/noLimits"
+                android:text="Senza limiti"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/untilRdBtn"
+                android:text="Fino a: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/number_days_RdBtn"
+                android:text= "N giorni: "
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+        </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/radiog"
+        android:layout_toEndOf="@+id/radiog"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnUntil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleziona Ora" />
+
+        <EditText
+            android:id="@+id/etDaysNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:inputType="number" />
+    </LinearLayout>
+
+
+</android.widget.RelativeLayout>

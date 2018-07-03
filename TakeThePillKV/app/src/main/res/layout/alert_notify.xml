@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp" >
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radiogroup"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/notNotify"
+            android:text="@string/no_notify"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/minBefore"
+            android:text="@string/minutes_before"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    </RadioGroup>
+
+
+    <EditText
+        android:id="@+id/etNotify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/radiogroup"
+        android:layout_toEndOf="@+id/radiogroup"
+        android:ems="3"
+        android:inputType="numberDecimal"
+        android:paddingLeft="4dp"/>
+
+
+</RelativeLayout>
